@@ -1,21 +1,20 @@
 import './App.css';
 
 import React from 'react';
-import {Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route,Routes, Switch } from 'react-router-dom';
 import Login from './components/Login';
 import Profile from './components/Profile';
 
 function App() {
   return (
     <div className='App'>
-      {<Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-      }
+      <Router>
+       <Routes>
+       <Route path="/" exact component={Login} />
+       <Route path="/profile" component={Profile}/></Routes>
+      </Router>
     </div>
-  )
+  );
 }
-
 
 export default App;
