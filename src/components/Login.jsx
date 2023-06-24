@@ -52,7 +52,7 @@ const Login = () => {
       onChange={(e) => setPasswordState(e.target.value)}
       placeholder="password"
     />
-    <button type="button" onClick={handleLogin}>
+    <button id="btn" type="button" onClick={handleLogin}>
       Login
     </button>
     <p className="errorMessage">{errorMsg}</p>

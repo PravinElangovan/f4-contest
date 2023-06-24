@@ -18,6 +18,9 @@
     height: 30px;
     width: 300px;
   }
+  #btn{
+    width: 30%;
+  }
   .errorMessage{
     color: red;
     font-size: 1rem;
